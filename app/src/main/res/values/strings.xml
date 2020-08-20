@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Survey App</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Done">Done</string>
+    <string name="BACK">Previous</string>
+    <string name="NEXT">Next</string>
+    <string name="takesrvy">" Take the survay"</string>
+</resources>

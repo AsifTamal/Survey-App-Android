@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+        <variable
+            name="startviewModel"
+            type="com.v2tech.asifulislam.surveyapp.viewmodels.StartViewModel"/>
+
+    </data>
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/reclvw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:listitem="@layout/card_item_recyclrvw"/>
+    <Button
+        android:id="@+id/btnfloat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+       android:text="@string/takesrvy"
+        android:layout_margin="30sp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+</RelativeLayout>
+</layout>
+
