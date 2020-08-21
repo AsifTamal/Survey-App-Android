@@ -16,12 +16,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.v2tech.asifulislam.surveyapp.api.Conn;
 import com.v2tech.asifulislam.surveyapp.models.SurveyData;
 
 import java.util.ArrayList;
@@ -38,15 +38,16 @@ public class DynamiFragments extends Fragment {
     CheckBox chkyes,chkno;
     RadioButton[] rb;
     String chk="";
-    public DynamiFragments(SurveyData surveyData) {
 
-        this.sSurvaydata=surveyData;
+    public DynamiFragments() {
+
+        this.sSurvaydata=new SurveyData();
 
         Log.d("DynamiFragments", "DynamiFragments: surveyData");
     }
-    public DynamiFragments() {
+    public DynamiFragments(SurveyData surveyData) {
         Log.d("DynamiFragments", "DynamiFragments: ");
-        sSurvaydata=new SurveyData();
+        this.sSurvaydata=surveyData;
     }
     @Nullable
     @Override

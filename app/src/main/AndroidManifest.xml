@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" android:parentActivityName=".StartActivity">
+        <activity android:configChanges="orientation|screenSize" android:name=".MainActivity" android:parentActivityName=".StartActivity">
 
         </activity>
     </application>

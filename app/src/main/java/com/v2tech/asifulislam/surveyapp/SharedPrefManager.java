@@ -122,7 +122,16 @@ public class SharedPrefManager {
     public void clear() {
         SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.clear();
+        editor.putString("numberQuestion", "");
+        editor.putString("numberAnswar", "");
+        editor.putString("MultipleChoiceQuestion", "");
+        editor.putString("MultipleChoiceAnswar", "");
+        editor.putString("TextQuestion", "");
+        editor.putString("TextAnswar", "");
+        editor.putString("CheckQuestion", "");
+        editor.putString("CheckAnswar", "");
+        editor.putString("DropdownQuestion", "");
+        editor.putString("DropdownAnswar", "");
         editor.apply();
     }
 

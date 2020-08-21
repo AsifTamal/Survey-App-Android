@@ -198,6 +198,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             Intent data = new Intent();
             setResult(RESULT_OK, data);
+            SharedPrefManager.getInstance(this).clear();
             finish();
 
         } catch (Exception e) {
